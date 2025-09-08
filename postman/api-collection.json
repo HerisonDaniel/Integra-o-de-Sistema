@@ -1,0 +1,42 @@
+{
+  "info": {
+    "name": "Alagamentos API",
+    "_postman_id": "12345678-1234-1234-1234-123456789012",
+    "description": "Coleção de testes da API de Alagamentos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar alertas",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/alerts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "alerts"]
+        }
+      }
+    },
+    {
+      "name": "Criar alerta",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"bairro\": \"Pirambu\", \"nivel\": 130 }"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/alerts",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "alerts"]
+        }
+      }
+    }
+  ]
+}
