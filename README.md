@@ -23,10 +23,6 @@ API disponível em `http://localhost:3000`.
 npm test
 ```
 
-## Arquitetura
-
-![Diagrama de Arquitetura](docs/arquitetura.png)
-
 ## Rotas
 Documentação detalhada em [docs/api.md](docs/api.md)
 
